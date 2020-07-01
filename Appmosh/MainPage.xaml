@@ -10,8 +10,7 @@
     <StackLayout HorizontalOptions="Center"  
                  BackgroundColor="Chartreuse"
                  VerticalOptions="Center"
-                 Padding="38
-                 
+                 Padding="38"
                  Orientation="Horizontal"
                  >
         <StackLayout BackgroundColor="Brown">
