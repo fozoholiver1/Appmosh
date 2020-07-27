@@ -7,18 +7,28 @@
              x:Class="Appmosh.MainPage"
              Padding="0, 20,0,0"
              >
-    <StackLayout HorizontalOptions="Center"  
-                 BackgroundColor="Chartreuse"
-                 VerticalOptions="Center"
-                 Padding="38"
-                 Orientation="Horizontal"
-                 >
-        <StackLayout BackgroundColor="Brown">
-            <Label Text="label 1" />
-         <Label Text="description"/>
-        </StackLayout>
-        <Label Text="label 2"            />
-        <Label Text="label 3" />
-    </StackLayout>
+    <Grid
+        RowSpacing="40"
+        ColumnSpacing="40"
+        BackgroundColor="Green"
+        >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100"/>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Label Text="label 1" Grid.Row="0" Grid.Column="0" BackgroundColor="Sienna"/>
+        <Label Text="label 2" Grid.Row="0" Grid.Column="1" BackgroundColor="Pink"/>
+        <Label Text="label 3" Grid.Row="1" Grid.Column="0" BackgroundColor="GhostWhite"/>
+        <Label Text="label 4" Grid.Row="1" Grid.Column="1" BackgroundColor="Yellow"/>
+        <Label Text="label 5" Grid.Row="2" Grid.ColumnSpan="3" BackgroundColor="Blue"/>
+        <Label Text="label 6" Grid.RowSpan="3" Grid.Column="2" BackgroundColor="Honeydew"/>
+
+    </Grid>
 </ContentPage>
